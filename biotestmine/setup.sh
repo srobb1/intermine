@@ -39,6 +39,8 @@ if test ! -f $IMDIR/$PROP_FILE; then
     cp $DIR/../bio/tutorial/malariamine.properties $PROP_FILE
     sed -i "s/PSQL_USER/$PSQL_USER/g" $PROP_FILE
     sed -i "s/PSQL_PWD/$PSQL_PWD/g" $PROP_FILE
+    sed -i "s/TOMCAT_USER/$TOMCAT_USER/g" $PROP_FILE
+    sed -i "s/TOMCAT_PWD/$TOMCAT_PWD/g" $PROP_FILE
     sed -i "s/items-malariamine/$ITEMS_DB/g" $PROP_FILE
     sed -i "s/userprofile-malariamine/$USERPROFILE_DB/g" $PROP_FILE
     sed -i "s/databaseName=malariamine/databaseName=$PROD_DB/g" $PROP_FILE
